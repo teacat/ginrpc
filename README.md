@@ -1,0 +1,5 @@
+# Ginrpc
+
+```
+ginrpc.New(Handler)
+```
