@@ -1,5 +1,11 @@
 package ginrpc
 
+import (
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+)
+
 func New[T any, M any](handler func(*gin.Context, T) (M, error)) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		var req T
